@@ -1,9 +1,11 @@
-package src.main.java.dependencyinjection.diwithconfigandbean;
+package com.ibroximjon.springlearning.dependencyinjection;
 
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Car {
-    private Engine engine;
+    private final Engine engine;
     public Car(Engine engine) {
         this.engine = engine;
     }

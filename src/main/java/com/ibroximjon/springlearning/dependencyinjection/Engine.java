@@ -1,4 +1,4 @@
-package src.main.java.dependencyinjection;
+package com.ibroximjon.springlearning.dependencyinjection;
 
 import org.springframework.stereotype.Component;
 
