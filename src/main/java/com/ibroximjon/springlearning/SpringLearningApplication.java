@@ -1,5 +1,6 @@
 package com.ibroximjon.springlearning;
 
+import com.ibroximjon.springlearning.dependencyinjection.AppConfig;
 import com.ibroximjon.springlearning.dependencyinjection.Car;
 import com.ibroximjon.springlearning.dependencyinjection.Engine;
 import org.springframework.boot.SpringApplication;
@@ -18,6 +19,10 @@ public class SpringLearningApplication {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.ibroximjon.springlearning");
         Car car1 = context.getBean(Car.class);
         car1.drive();
+
+        ApplicationContext context1 = new AnnotationConfigApplicationContext(AppConfig.class);
+        Car car2 = context1.getBean(Car.class);
+        car2.drive();
 
     }
 
