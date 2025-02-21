@@ -12,17 +12,19 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class SpringLearningApplication {
 
     public static void main(String[] args) {
-        Engine engine = new Engine();
+       /* Engine engine = new Engine();
         Car car = new Car(engine);
-        car.drive(); // dependency injected manually
+        car.drive(); // dependency injected manually*/
 
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.ibroximjon.springlearning");
+        /*ApplicationContext context = new AnnotationConfigApplicationContext("com.ibroximjon.springlearning");
         Car car1 = context.getBean(Car.class);
-        car1.drive();
+        car1.drive();*/
 
-        ApplicationContext context1 = new AnnotationConfigApplicationContext(AppConfig.class);
+        AnnotationConfigApplicationContext context1 = new AnnotationConfigApplicationContext(AppConfig.class);
         Car car2 = context1.getBean(Car.class);
         car2.drive();
+        context1.close();
+
 
     }
 

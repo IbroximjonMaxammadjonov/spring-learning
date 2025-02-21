@@ -8,6 +8,7 @@ public class Car {
     private final Engine engine;
     public Car(Engine engine) {
         this.engine = engine;
+        System.out.println("Car constructor is called");
     }
 
     public void drive() {
