@@ -12,6 +12,7 @@ public class LoggingAspect {
     @Before("execution(* com.ibroximjon.springlearning.springaop.PaymentService.*(..))")
     public void beforePaymentMethod() {
         System.out.println("Payment method begin");
+        System.out.println("hello");
     }
 
     @After("execution(* com.ibroximjon.springlearning.springaop.PaymentService.*(..))")
